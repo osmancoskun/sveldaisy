@@ -5,8 +5,9 @@ Welcome to Sveldaisy! This is a library of high-quality, easy-to-use components 
 * TailwindCSS
 * DaisyUI
 ## Installation
-TailwindCSS => https://tailwindcss.com/docs/installation
-DaisyUI => https://daisyui.com/docs/install/
+* TailwindCSS => https://tailwindcss.com/docs/installation
+* DaisyUI => https://daisyui.com/docs/install/
+* Sveldaisy
 ```
 npm install sveldaisy
 ```
