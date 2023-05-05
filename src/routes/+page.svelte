@@ -1,12 +1,9 @@
 <script>
-	import Button from '$lib/Button.svelte';
+	import { Button, Dropdown, DropdownAction, DropdownContent } from '$lib';
+	let dropdowndatas = ['end', 'bottom', 'left', 'right', 'hover'];
 </script>
 
-<main class="h-screen w-screen flex justify-center items-center flex-col">
-	<div class="pb-2 text-sm font-bold">
-		<a class="opacity-20 hover:opacity-60" href="#button">#</a>
-		<span class="component-preview-title">Button</span>
-	</div>
+<main class="h-screen w-screen flex justify-center items-center flex-col gap-y-5">
 	<div>
 		<Button primary>qwe</Button>
 		<Button secondary>qwe</Button>
@@ -35,4 +32,103 @@
 		<Button sm accent>qwe</Button>
 		<Button xs ghost loading>qwe</Button>
 	</div>
+	<div>
+		<Dropdown>
+			<DropdownAction>
+				<Button>Dropdown</Button>
+			</DropdownAction>
+			<DropdownContent shadow rounded>
+				<li>
+					<a href="#">item1</a>
+				</li>
+				<li>
+					<a href="#">item1</a>
+				</li>
+				<li>
+					<a href="#">item1</a>
+				</li>
+			</DropdownContent>
+		</Dropdown>
+		<Dropdown left>
+			<DropdownAction>
+				<Button>Dropdown Left</Button>
+			</DropdownAction>
+			<DropdownContent shadow rounded>
+				<li>
+					<a href="#">item1</a>
+				</li>
+				<li>
+					<a href="#">item1</a>
+				</li>
+				<li>
+					<a href="#">item1</a>
+				</li>
+			</DropdownContent>
+		</Dropdown>
+		<Dropdown right>
+			<DropdownAction>
+				<Button>Dropdown right</Button>
+			</DropdownAction>
+			<DropdownContent shadow rounded>
+				<li>
+					<a href="#">item1</a>
+				</li>
+				<li>
+					<a href="#">item1</a>
+				</li>
+				<li>
+					<a href="#">item1</a>
+				</li>
+			</DropdownContent>
+		</Dropdown>
+		<Dropdown bottom>
+			<DropdownAction>
+				<Button>Dropdown bottom</Button>
+			</DropdownAction>
+			<DropdownContent shadow rounded>
+				<li>
+					<a href="#">item1</a>
+				</li>
+				<li>
+					<a href="#">item1</a>
+				</li>
+				<li>
+					<a href="#">item1</a>
+				</li>
+			</DropdownContent>
+		</Dropdown>
+		<Dropdown end>
+			<DropdownAction>
+				<Button>Dropdown end</Button>
+			</DropdownAction>
+			<DropdownContent shadow rounded>
+				<li>
+					<a href="#">item1</a>
+				</li>
+				<li>
+					<a href="#">item1</a>
+				</li>
+				<li>
+					<a href="#">item1</a>
+				</li>
+			</DropdownContent>
+		</Dropdown>
+		<Dropdown top>
+			<DropdownAction>
+				<Button>Dropdown top</Button>
+			</DropdownAction>
+			<DropdownContent shadow rounded>
+				<li>
+					<a href="#">item1</a>
+				</li>
+				<li>
+					<a href="#">item1</a>
+				</li>
+				<li>
+					<a href="#">item1</a>
+				</li>
+			</DropdownContent>
+		</Dropdown>
+	</div>
+	<div />
 </main>
